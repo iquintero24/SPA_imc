@@ -18,8 +18,22 @@ forms.addEventListener('submit', (e) => {
 
     const result = weight / (height*height)
     let resultfixed = result.toFixed(1)
+    let message
 
+    if(resultfixed < 10.5){
+        message = 'Bajo peso';
+    }else if(resultfixed < 24.9){
+        message = 'Peso normal';
+    }else if (resultfixed < 29.9){
+        message = 'Sobre peso';
+    }else{
+        message = 'obesidad'
+    }
+    
+    console.log(message);
     document.getElementById('result').value  = resultfixed 
+
+
 
     e.preventDefault(); // Prevents the default form submission
     // Custom validation and submission logic here
