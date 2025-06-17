@@ -17,17 +17,31 @@
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="15days">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="icon" href="./src/icons/favicon.png" type="image/png">
     <title>SPA_IMC</title>
 </head>
 
 <body>
 
     <header>
-        <h1>IMC</h1>
+  
     </header>
 
     <main>
+        <h1>Calculator IMC</h1>
+        <form action="" id="formCalculate">
+            <label for="Weight">plis, enter your weight</label>
+            <input type="number" name="weight" value="weight" placeholder="Enter your Kg" step="0.01">
 
+            <label for="Height">plis, enter your Height</label>
+            <input type="number" name="height" value="height" placeholder="Enter your Mt"  step="0.01">
+
+            <label for="Height">Your IMC is</label>
+            <input type="number" name="result" id="result" value="result" placeholder="" step="0.01">
+
+            <button class="calculate" type="submit" name="submit">Calculate</button>
+
+        </form>
     </main>
 
     <footer></footer>
